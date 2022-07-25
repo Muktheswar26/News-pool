@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#16257E</color>
+    <color name="colorPrimaryDark">#16257E</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="colorBackground">#FAF9F9</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#16257E</color>
+    <color name="click">#AFB1B0</color>
+    <color name="welcometonewsapi">#F70C0C0C</color>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:id="@+id/topheadelines"
+                        android:textColor="@color/colorTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Top Headlines"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="16dp"
+
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:id="@+id/mic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginVertical="12dp"
+                        android:paddingRight="0dp"
+                        app:srcCompat="@drawable/mic" />
+                </RelativeLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/borderlessButtonStyle">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/but_home"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+
+                                android:text="HOME"/>
+
+                            <Button
+                                android:id="@+id/but_world"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="WORLD" />
+                            <Button
+                                android:id="@+id/but_edu"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="110dp"
+                                android:layout_height="match_parent"
+
+
+                                android:text="EDUCATION"
+
+                                />
+                            <Button
+                                android:id="@+id/but_science"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+
+                                android:text="SCIENCE" />
+
+                            <Button
+                                android:id="@+id/but_sport"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+
+                                android:text="SPORT" />
+                            <Button
+                                android:id="@+id/but_environment"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_style"
+                                android:text="ENVIRONMENT" />
+                            <Button
+                                android:id="@+id/but_society"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+
+                                android:text="SOCIETY" />
+                            <Button
+                                android:id="@+id/but_FASHION"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+
+                                android:text="FASHION" />
+                            <Button
+                                android:id="@+id/but_business"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="BUSINESS" />
+                            <Button
+                                android:id="@+id/but_culture"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:text="CULTURE" />
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/error"/>
+
+</android.support.design.widget.CoordinatorLayout>

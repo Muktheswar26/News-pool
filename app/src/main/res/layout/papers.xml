@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="1000dp"
+    android:background="@mipmap/bggg_foreground">
+
+
+    <Button
+        android:id="@+id/but_e"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="152dp"
+        android:background="@mipmap/nppp_foreground"
+        android:text="ENGLISH"
+        android:textColor="@color/welcometonewsapi"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but_h"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/nppp_foreground"
+        android:text="Hindi"
+        android:textColor="@color/welcometonewsapi"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_e"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/but_k"
+        android:background="@mipmap/nppp_foreground"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="KANNADA"
+        android:textColor="@color/welcometonewsapi"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_h" />
+
+    <Button
+        android:id="@+id/but_t"
+        android:background="@mipmap/nppp_foreground"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="TELUGU"
+        android:textColor="@color/welcometonewsapi"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_k" />
+
+    <Button
+        android:id="@+id/but_m"
+        android:background="@mipmap/nppp_foreground"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:text="Malyalam"
+        android:textColor="@color/welcometonewsapi"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but_t"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="ePapers"
+        android:textColor="#F7131313"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
